@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Echoes of the Hollow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+
+  <h1 id="location-name"></h1>
+
+  <img id="scene-image" src="" alt="scene">
+
+  <p id="story-text"></p>
+
+  <div id="stats">
+    ❤️ Health: <span id="health">100</span>
+    🧠 Sanity: <span id="sanity">100</span>
+  </div>
+
+  <div id="inventory">
+    🎒 Inventory: <span id="inventory-items">Empty</span>
+  </div>
+
+  <div id="choices"></div>
+
+  <h3>🗺️ Map</h3>
+  <div id="map">
+    <button onclick="travel('forest')">Forest</button>
+    <button onclick="travel('town')">Town</button>
+    <button onclick="travel('hospital')">Hospital</button>
+  </div>
+
+</div>
+
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="ambientSound" src="sounds/ambient.mp3" loop></audio>
+<audio id="hurtSound" src="sounds/hurt.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
