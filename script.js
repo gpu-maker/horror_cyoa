@@ -5,7 +5,7 @@ let inventory = [];
 const locations = {
   forest: {
     name: "Whispering Forest",
-    image: "images/forest.jpg",
+    image: "forest.jpeg",
     text: "The trees whisper your name. Something watches from the dark.",
     choices: [
       { text: "Search the ground", effect: () => addItem("Rusty Key") },
